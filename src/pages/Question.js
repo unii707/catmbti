@@ -56,7 +56,7 @@ const Question = () => {
 
                 <Title>
                     <Badge bg="info"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
-                     &nbsp;&nbsp;{QuestionData[questionNo].title}
+                     &nbsp;&nbsp;<span>{QuestionData[questionNo].title}</span>
                 </Title>
 
 
@@ -91,7 +91,7 @@ const Contents = styled.div`
 `
 const Title = styled.div`
 
-    font-size: 12pt;
+    font-size: 13pt;
     font-family: "nanumsquareroundr";
     padding: 25px;
     border-bottom: 1px dotted #666;
