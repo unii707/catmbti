@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useNavigate, createSearchParams } from 'react-router-dom';
 import { Button, ProgressBar } from 'react-bootstrap';
 import { QuestionData } from '../assets/data/questiondata';
+import Badge from 'react-bootstrap/Badge';
 
 
 
@@ -53,15 +54,20 @@ const Question = () => {
             <Contents>
                 
 
-               <Title>질문 : {QuestionData[questionNo].title}</Title>
+                <Title>
+                    <Badge bg="info"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
+                     &nbsp;&nbsp;{QuestionData[questionNo].title}
+                </Title>
 
 
                 <ButtonGroup>
-                    <Button variant="light" onClick= {()=>handleClickButton(1, QuestionData[questionNo].type) } style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
-                        {QuestionData[questionNo].answera}
+                    <Button variant="light"
+                        onClick={() => handleClickButton(1, QuestionData[questionNo].type)}
+                        style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
+                        A01 : {QuestionData[questionNo].answera}
                     </Button>
                     <Button variant="light" onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px" }} >
-                        {QuestionData[questionNo].answerb}
+                    A02 : {QuestionData[questionNo].answerb}
                     </Button>                   
                 </ButtonGroup>
 
