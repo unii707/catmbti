@@ -50,7 +50,7 @@ const Question = () => {
     return (
         <Wrapper>
 
-            <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100} style={{ marginTop: "30px", marginLeft:"40px", marginRight:"40px"}} /> 
+            <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100} style={{ marginTop: "30px", marginLeft:"20px", marginRight:"40px"}} /> 
 
 
 
@@ -88,7 +88,6 @@ const Wrapper = styled.div`
 `
 const Contents = styled.div`
     display: flex;
-    flex-basis:0;
     justify-content: center;
     align-items : center;
     flex-direction: column;
