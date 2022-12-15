@@ -27,7 +27,7 @@ const Result = () => {
             <Contents>
                 <Title>결과보기</Title>
                 <LogoImage>
-                    <img src={resultData.image} className="rounded-circle" width={350} height={350}  alt="결과 이미지" />
+                    <img src={resultData.image} className="rounded-circle" width={300} height={300}  alt="결과 이미지" />
                 </LogoImage>
                 
                 <Desc>
@@ -77,9 +77,9 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 30pt;
+    font-size: 24pt;
     background-color : #28d1e0;
-    height: 130px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items : center;
