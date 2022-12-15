@@ -27,7 +27,7 @@ const Result = () => {
             <Contents>
                 <Title>결과보기</Title>
                 <LogoImage>
-                    <img src={resultData.image} className="rounded-circle" width={300} height={300}  alt="결과 이미지" />
+                    <img src={resultData.image} className="rounded-circle" width={280} height={280}  alt="결과 이미지" />
                 </LogoImage>
                 
                 <Desc>
@@ -55,7 +55,7 @@ const Result = () => {
                 </Row>
                 <Button
                     style={{ backgroundColor: '#232272', borderColor: '#232272', borderRadius: '30px', width: '350px',fontSize:'18pt' }}
-                    onClick={() => navigate("/")}>TEST Again</Button>
+                    onClick={() => navigate("/")}>TEST AGAIN</Button>
             </Contents>
         </Wrapper>
     );
@@ -77,9 +77,9 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 18pt;
+    font-size: 20pt;
     background-color : #28d1e0;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items : center;
@@ -88,9 +88,9 @@ const Header = styled.div`
 `
 const Title = styled.div`
 
-    font-size: 20pt;
+    font-size: 16pt;
     font-family: "nanumsquareroundr";
-    padding: 20px;
+    padding: 30px;
 `
 
 const LogoImage = styled.div`
@@ -107,7 +107,7 @@ const Desc = styled.div`
     font-family: "nanumsquareroundr";
 `
 const Textmbti = styled.div`
-    font-size: 26pt;
+    font-size: 24pt;
     padding: 10px;
     text-align: center;
     font-weight:600;

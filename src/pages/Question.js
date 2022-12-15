@@ -6,6 +6,7 @@ import { QuestionData } from '../assets/data/questiondata';
 
 
 
+
 const Question = () => {
     const [questionNo, setQuestionNo] = React.useState(0);
     const [totalScore, setTotalScore] = React.useState([
@@ -50,7 +51,11 @@ const Question = () => {
         <Wrapper>
             <ProgressBar variant="success" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px", marginLeft:"20px", marginRight:"20px"}} />
             <Contents>
-                <Title>{QuestionData[questionNo].title}</Title>
+                
+
+               <Title>{QuestionData[questionNo].title}</Title>
+
+
                 <ButtonGroup>
                     <Button variant="outline-dark" onClick= {()=>handleClickButton(1, QuestionData[questionNo].type) } style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
                         {QuestionData[questionNo].answera}
@@ -84,6 +89,10 @@ const Title = styled.div`
     font-family: "nanumsquareroundr";
     padding: 25px;
     border-bottom: 1px dotted #666;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 `
 const ButtonGroup = styled.div`
     display: flex;

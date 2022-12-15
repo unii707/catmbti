@@ -20,7 +20,7 @@ const Home = () => {
             <Contents>
                 <Title>나에게 맞는 주인님은?</Title>
                 <LogoImage>
-                    <img src={PangImage} className="rounded-circle" width={300} height={300}  alt="고양이사진" />
+                    <img src={PangImage} className="rounded-circle" width={280} height={280}  alt="고양이사진" />
                 </LogoImage>
                 <Desc>MBTI를 기반으로 하는 <br />나랑 잘 맞는 고양이 찾기!</Desc>
                 <Button style={{backgroundColor: "#333", borderColor: "#333", borderRadius: "30px", width: "350px", fontSize:'18pt'} } onClick={handleClickButton}>TEST START</Button>
@@ -45,9 +45,9 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 18pt;
+    font-size: 20pt;
     background-color : #28d1e0;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items : center;
@@ -58,7 +58,7 @@ const Title = styled.div`
 
     font-size: 16pt;
     font-family: "nanumsquareroundr";
-    padding: 20px;
+    padding: 30px;
 `
 
 const LogoImage = styled.div`
