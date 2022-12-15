@@ -55,9 +55,10 @@ const Header = styled.div`
 
 `
 const Title = styled.div`
-    padding: 20px;
+
     font-size: 20pt;
     font-family: "nanumsquareroundr";
+    padding: 20px;
 `
 
 const LogoImage = styled.div`

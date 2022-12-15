@@ -87,9 +87,10 @@ const Header = styled.div`
 
 `
 const Title = styled.div`
-    padding: 22px;
-    font-size: 24pt;
+
+    font-size: 20pt;
     font-family: "nanumsquareroundr";
+    padding: 20px;
 `
 
 const LogoImage = styled.div`
@@ -99,22 +100,18 @@ const LogoImage = styled.div`
 const Desc = styled.div`
     font-size: 18pt;
     padding: 10px;
-border: 1px solid red;
-display: flex;
-justify-content: center;
-align-items : center;
-align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    align-content: center;
     font-family: "nanumsquareroundr";
 `
 const Textmbti = styled.div`
-
-border: 1px solid pink;
     font-size: 28pt;
     padding: 10px;
     text-align: center;
     font-weight:600;
     font-family: "nanumsquareroundr";
-
     color: #6633ff;
     align-self: center;
 `

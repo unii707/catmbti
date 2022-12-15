@@ -48,14 +48,14 @@ const Question = () => {
 
     return (
         <Wrapper>
-            <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px"}} />
+            <ProgressBar variant="success" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px", marginLeft:"20px", marginRight:"20px"}} />
             <Contents>
                 <Title>{QuestionData[questionNo].title}</Title>
                 <ButtonGroup>
-                    <Button onClick= {()=>handleClickButton(1, QuestionData[questionNo].type) } style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
+                    <Button variant="outline-dark" onClick= {()=>handleClickButton(1, QuestionData[questionNo].type) } style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
                         {QuestionData[questionNo].answera}
                     </Button>
-                    <Button onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px" }} >
+                    <Button variant="outline-dark" onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px" }} >
                         {QuestionData[questionNo].answerb}
                     </Button>                   
                 </ButtonGroup>
@@ -79,9 +79,11 @@ const Contents = styled.div`
     flex-direction: column;
 `
 const Title = styled.div`
-    padding: 25px;
-    font-size: 24pt;
+
+    font-size: 18pt;
     font-family: "nanumsquareroundr";
+    padding: 25px;
+    border-bottom: 1px dotted #666;
 `
 const ButtonGroup = styled.div`
     display: flex;
