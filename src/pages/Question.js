@@ -4,7 +4,8 @@ import { useNavigate, createSearchParams } from 'react-router-dom';
 import { Button, ProgressBar } from 'react-bootstrap';
 import { QuestionData } from '../assets/data/questiondata';
 import Badge from 'react-bootstrap/Badge';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -50,7 +51,12 @@ const Question = () => {
 
     return (
         <Wrapper>
-            <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px", marginLeft:"20px", marginRight:"20px"}} />
+                <Row>
+                    <Col md={{ span: 8, offset: 2 }}>
+                    <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "30px", marginLeft:"20px", marginRight:"20px"}} />
+                    </Col>
+                </Row>            
+
             <Contents>
                 
                 <Title>
@@ -81,6 +87,7 @@ const Wrapper = styled.div`
     background-color : white;
     height: 100vh;
     width: 100%;
+    margin: 0 20px;
 `
 const Contents = styled.div`
     display: flex;
