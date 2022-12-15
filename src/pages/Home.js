@@ -16,7 +16,8 @@ const Home = () => {
 
     return (
         <Wrapper>
-            <Header>예비집사  <span style={{ color: '#232272', padding: '15px' }}>MBTI TEST</span></Header>
+            <Header>예비집사  <span style={{ color: '#232272', padding: '15px' }}>MBTI TEST</span>
+            </Header>
             <Contents>
                 <Title>나에게 맞는 주인님은?</Title>
                 <LogoImage>
@@ -44,10 +45,10 @@ const Contents = styled.div`
 `
 
 const Header = styled.div`
-
+    color: #9955ff;
     font-size: 22pt;
     background-color : #fff;
-    border: 10px solid #3e5db4;
+    border: 8px solid #aaccff;
     height: 90px;
     display: flex;
     justify-content: center;

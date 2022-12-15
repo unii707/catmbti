@@ -53,7 +53,6 @@ const Question = () => {
             <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px", marginLeft:"20px", marginRight:"20px"}} />
             <Contents>
                 
-
                 <Title>
                     <Badge bg="info"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
                      &nbsp;&nbsp;<span>{QuestionData[questionNo].title}</span>
