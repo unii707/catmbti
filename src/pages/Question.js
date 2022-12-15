@@ -49,7 +49,7 @@ const Question = () => {
 
     return (
         <Wrapper>
-            <ProgressBar variant="success" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px", marginLeft:"20px", marginRight:"20px"}} />
+            <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "20px", marginLeft:"20px", marginRight:"20px"}} />
             <Contents>
                 
 

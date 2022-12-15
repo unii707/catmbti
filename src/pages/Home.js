@@ -47,7 +47,7 @@ const Header = styled.div`
 
     font-size: 22pt;
     background-color : #fff;
-    border: 10px solid #232272;
+    border: 10px solid #3e5db4;
     height: 90px;
     display: flex;
     justify-content: center;
