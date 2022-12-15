@@ -23,7 +23,7 @@ const Home = () => {
                     <img src={PangImage} className="rounded-circle" width={350} height={350}  alt="고양이사진" />
                 </LogoImage>
                 <Desc>MBTI를 기반으로 하는 <br />나랑 잘 맞는 고양이 찾기!</Desc>
-                <Button style={{backgroundColor: "#333", borderColor: "#333", borderRadius: "30px", width: "250px"} } onClick={handleClickButton}>TEST START</Button>
+                <Button style={{backgroundColor: "#333", borderColor: "#333", borderRadius: "30px", width: "350px", fontSize:'18pt'} } onClick={handleClickButton}>TEST START</Button>
             </Contents>
         </Wrapper>
     );
@@ -45,7 +45,7 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 34pt;
+    font-size: 30pt;
     background-color : #28d1e0;
     height: 130px;
     display: flex;
@@ -65,9 +65,9 @@ const LogoImage = styled.div`
 `
 
 const Desc = styled.div`
+    font-size: 17pt;
     padding: 28px;
     text-align: center;
     font-family: "nanumsquareroundr";
-    font-weight:600;
 `
 

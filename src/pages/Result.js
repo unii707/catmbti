@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 import { ResultData } from '../assets/data/resultdata';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 const Result = () => {
@@ -27,18 +29,30 @@ const Result = () => {
                 <LogoImage>
                     <img src={resultData.image} className="rounded-circle" width={350} height={350}  alt="결과 이미지" />
                 </LogoImage>
+                
                 <Desc>
-                    <Textmbti>
-                        {resultData.best}
-                    </Textmbti>
-                    <Textscript>
-                        예비 집사님과 잘 맞는 고양이는 &nbsp;<br />
-                        <span style={{ color: '#232272', fontWeight: '600' }}> {resultData.name} </span>입니다. 
-                    </Textscript>
+                    <Row>
+                        <Col sm={6} md={3}>
+                            <Textmbti>
+                            {resultData.best}
+                            </Textmbti>
+                        </Col>
+                        <Col sm={6} md={9}>
+                            <Textscript>
+                            예비 집사님과 잘 맞는 고양이는 <br /> 
+                            <span style={{ color: '#232272', fontWeight: '600' }}> {resultData.name} </span>입니다. 
+                            </Textscript>
+                        </Col>
+                    </Row>
                 </Desc>
-                <Textguide>
-                        {resultData.desc}
-                </Textguide>
+                
+                <Row>
+                    <Col md={{ span: 6, offset: 3 }}>
+                        <Textguide>
+                                {resultData.desc}
+                        </Textguide>
+                    </Col>
+                </Row>
                 <Button
                     style={{ backgroundColor: '#232272', borderColor: '#232272', borderRadius: '30px', width: '350px',fontSize:'18pt' }}
                     onClick={() => navigate("/")}>TEST Again</Button>
@@ -84,35 +98,38 @@ const LogoImage = styled.div`
 
 const Desc = styled.div`
     font-size: 18pt;
-    width: 50%;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: center;
-    align-items : center;
+border: 1px solid red;
+display: flex;
+justify-content: center;
+align-items : center;
+align-content: center;
     font-family: "nanumsquareroundr";
 `
 const Textmbti = styled.div`
+
+border: 1px solid pink;
     font-size: 28pt;
     padding: 10px;
     text-align: center;
     font-weight:600;
     font-family: "nanumsquareroundr";
-    width: 100px;
+
     color: #6633ff;
+    align-self: center;
 `
 const Textscript = styled.div`
+border: 1px solid blue;
     font-size: 17pt;
     padding: 25px;
     text-align: center;
     font-family: "nanumsquareroundr";
-    width: 400px;
+
 `
 const Textguide = styled.div`
     font-size: 14pt;
     padding: 34px;
-    width: 50%; 
+
     border-top: 1px dotted #666;
     font-family: "nanumsquareroundr";
     
