@@ -77,9 +77,9 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 24pt;
+    font-size: 18pt;
     background-color : #28d1e0;
-    height: 90px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items : center;
@@ -107,7 +107,7 @@ const Desc = styled.div`
     font-family: "nanumsquareroundr";
 `
 const Textmbti = styled.div`
-    font-size: 28pt;
+    font-size: 26pt;
     padding: 10px;
     text-align: center;
     font-weight:600;
@@ -116,16 +116,15 @@ const Textmbti = styled.div`
     align-self: center;
 `
 const Textscript = styled.div`
-border: 1px solid blue;
     font-size: 17pt;
-    padding: 25px;
+    padding: 5px;
     text-align: center;
     font-family: "nanumsquareroundr";
 
 `
 const Textguide = styled.div`
     font-size: 14pt;
-    padding: 34px;
+    padding: 30px;
 
     border-top: 1px dotted #666;
     font-family: "nanumsquareroundr";

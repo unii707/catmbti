@@ -80,7 +80,7 @@ const Contents = styled.div`
 `
 const Title = styled.div`
 
-    font-size: 18pt;
+    font-size: 16pt;
     font-family: "nanumsquareroundr";
     padding: 25px;
     border-bottom: 1px dotted #666;
@@ -90,4 +90,5 @@ const ButtonGroup = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 `

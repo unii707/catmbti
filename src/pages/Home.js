@@ -45,9 +45,9 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 24pt;
+    font-size: 18pt;
     background-color : #28d1e0;
-    height: 90px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items : center;
@@ -56,7 +56,7 @@ const Header = styled.div`
 `
 const Title = styled.div`
 
-    font-size: 20pt;
+    font-size: 16pt;
     font-family: "nanumsquareroundr";
     padding: 20px;
 `
