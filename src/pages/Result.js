@@ -2,12 +2,22 @@ import React from 'react';
 //css-in-js
 import styled from 'styled-components';
 import Button from 'react-bootstrap/Button';
-import { useNavigate } from 'react-router-dom';
+
 import { ResultData } from '../assets/data/resultdata';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 
 const Result = () => {
     const navigate = useNavigate();
+    const [searchParams] = useSearchParams();
+    const mbti = searchParams.get('mbti');
+
+    const [resultData, setResultData] = React.useState({});
+
+    React.useEffect(() => {
+        const result = ResultData.find((s) => s.best === mbti);
+        setResultData(result);
+    }, [mbti])
 
     return (
         <Wrapper>
@@ -15,10 +25,10 @@ const Result = () => {
             <Contents>
                 <Title>결과보기</Title>
                 <LogoImage>
-                    <img src={ResultData[0].image} className="rounded-circle" width={350} height={350}  />
+                    <img src={resultData.image} className="rounded-circle" width={350} height={350}  />
                 </LogoImage>
                 <Desc>예비 집사님과 잘 맞는 고양이는 <br />
-                    <span style={{ color: '#232272', fontWeight: '600' }}>{ResultData[0].name} </span>입니다.</Desc>
+                    <span style={{ color: '#232272', fontWeight: '600' }}>{resultData.name} </span>입니다.</Desc>
                 <Button
                     style={{ backgroundColor: '#232272', borderColor: '#232272', borderRadius: '30px', width: '250px' }}
                     onClick={() => navigate("/")}>TEST Again</Button>
