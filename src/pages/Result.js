@@ -28,7 +28,11 @@ const Result = () => {
                     <img src={resultData.image} className="rounded-circle" width={350} height={350}  alt="결과 이미지" />
                 </LogoImage>
                 <Desc>예비 집사님과 잘 맞는 고양이는 <br />
-                    <span style={{ color: '#232272', fontWeight: '600' }}>{resultData.name} </span>입니다.</Desc>
+                    <span style={{ color: '#232272', fontWeight: '600' }}>{resultData.name} </span>입니다. <br />
+                    <p>
+                        {resultData.desc}
+                    </p>
+                </Desc>
                 <Button
                     style={{ backgroundColor: '#232272', borderColor: '#232272', borderRadius: '30px', width: '250px' }}
                     onClick={() => navigate("/")}>TEST Again</Button>
