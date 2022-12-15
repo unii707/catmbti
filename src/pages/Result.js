@@ -25,7 +25,7 @@ const Result = () => {
             <Contents>
                 <Title>결과보기</Title>
                 <LogoImage>
-                    <img src={resultData.image} className="rounded-circle" width={350} height={350}  />
+                    <img src={resultData.image} className="rounded-circle" width={350} height={350}  alt="결과 이미지" />
                 </LogoImage>
                 <Desc>예비 집사님과 잘 맞는 고양이는 <br />
                     <span style={{ color: '#232272', fontWeight: '600' }}>{resultData.name} </span>입니다.</Desc>
