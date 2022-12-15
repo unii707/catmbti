@@ -53,14 +53,14 @@ const Question = () => {
             <Contents>
                 
 
-               <Title>{QuestionData[questionNo].title}</Title>
+               <Title>질문 : {QuestionData[questionNo].title}</Title>
 
 
                 <ButtonGroup>
-                    <Button variant="outline-dark" onClick= {()=>handleClickButton(1, QuestionData[questionNo].type) } style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
+                    <Button variant="light" onClick= {()=>handleClickButton(1, QuestionData[questionNo].type) } style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
                         {QuestionData[questionNo].answera}
                     </Button>
-                    <Button variant="outline-dark" onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px" }} >
+                    <Button variant="light" onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px" }} >
                         {QuestionData[questionNo].answerb}
                     </Button>                   
                 </ButtonGroup>

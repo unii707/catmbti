@@ -45,9 +45,9 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: white;
-    font-size: 20pt;
+    font-size: 22pt;
     background-color : #28d1e0;
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items : center;
