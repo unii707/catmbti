@@ -51,27 +51,32 @@ const Question = () => {
 
     return (
         <Wrapper>
-                <Row>
-                    <Col md={{ span: 8, offset: 2 }}>
-                    <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100 } style={ {marginTop: "30px", marginLeft:"20px", marginRight:"20px"}} />
+            <Row className="justify-content-md-center">
+                <Col xs lg="2"></Col>
+                <Col>
+                    <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100} style={{ marginTop: "30px"}} /> 
+                </Col>
+                <Col xs lg="2"></Col>
+            </Row>
+            <Row className="justify-content-md-center">
+                    <Col xs lg="2"></Col>
+                    <Col>
+                        <Title>
+                            <Badge bg="info"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
+                            &nbsp;&nbsp;<span>{QuestionData[questionNo].title}</span>
+                        </Title>
                     </Col>
-                </Row>            
-
-            <Contents>
-                
-                <Title>
-                    <Badge bg="info"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
-                     &nbsp;&nbsp;<span>{QuestionData[questionNo].title}</span>
-                </Title>
-
+                    <Col xs lg="2"></Col>
+            </Row>   
+            <Contents> 
 
                 <ButtonGroup>
                     <Button variant="light"
                         onClick={() => handleClickButton(1, QuestionData[questionNo].type)}
-                        style={{ width: "40%", minHeight: "200px", fontSize: "15pt" }}>
+                        style={{ width: "40%", minHeight: "200px", fontSize: "15pt", flex: "none" }}>
                         A01 : {QuestionData[questionNo].answera}
                     </Button>
-                    <Button variant="light" onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px" }} >
+                    <Button variant="light" onClick= {()=>handleClickButton(0, QuestionData[questionNo].type) }style={{ width: "40%", minHeight: "200px", fontSize: "15pt", marginLeft: "20px", flex: "none" }} >
                     A02 : {QuestionData[questionNo].answerb}
                     </Button>                   
                 </ButtonGroup>
@@ -91,6 +96,7 @@ const Wrapper = styled.div`
 `
 const Contents = styled.div`
     display: flex;
+    flex-basis:0;
     justify-content: center;
     align-items : center;
     flex-direction: column;
@@ -112,4 +118,5 @@ const ButtonGroup = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 30px;
+    border: 1px solid red;
 `
