@@ -91,7 +91,7 @@ const Contents = styled.div`
 `
 const Title = styled.div`
 
-    font-size: 16pt;
+    font-size: 12pt;
     font-family: "nanumsquareroundr";
     padding: 25px;
     border-bottom: 1px dotted #666;
