@@ -2,9 +2,18 @@ import React from 'react';
 //css-in-js
 import styled from 'styled-components';
 import PangImage from '../assets/logo_cat.png';
-import Button  from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
+    const handleClickButton = () => {
+        navigate('/question');
+    }
+
     return (
         <Wrapper>
             <Header>예비집사  <span style={{ color: '#232272', padding: '15px' }}>MBTI TEST</span></Header>
@@ -13,8 +22,8 @@ const Home = () => {
                 <LogoImage>
                     <img src={PangImage} className="rounded-circle" width={350} height={350}  />
                 </LogoImage>
-                <Desc>MBTI를 기반으로 하는 나랑 잘 맞는 고양이 찾기!</Desc>
-                <Button>TEST START</Button>
+                <Desc>MBTI를 기반으로 하는 <br />나랑 잘 맞는 고양이 찾기!</Desc>
+                <Button style={{backgroundColor: "#333", borderColor: "#333", borderRadius: "30px", width: "250px"} } onClick={handleClickButton}>TEST START</Button>
             </Contents>
         </Wrapper>
     );
@@ -42,11 +51,13 @@ const Header = styled.div`
     display: flex;
     justify-content: center;
     align-items : center;
+    font-family: "nanumsquareroundb";
 
 `
 const Title = styled.div`
     padding: 25px;
     font-size: 24pt;
+    font-family: "nanumsquareroundr";
 `
 
 const LogoImage = styled.div`
@@ -54,6 +65,9 @@ const LogoImage = styled.div`
 `
 
 const Desc = styled.div`
-    padding: 25px;
+    padding: 28px;
+    text-align: center;
+    font-family: "nanumsquareroundr";
+    font-weight:600;
 `
 

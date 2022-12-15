@@ -1,0 +1,14 @@
+.App {
+    font-family: "NANUMSQUAREROUNDB";
+    font-family: "NANUMSQUAREROUNDR";
+}
+
+@font-face {
+    font-family: "NANUMSQUAREROUNDB";
+    src: url(/src/assets/fonts/NANUMSQUAREROUNDB.TTF);
+}
+
+@font-face {
+    font-family: "NANUMSQUAREROUNDR";
+    src: url(/src/assets/fonts/NANUMSQUAREROUNDR.TTF);
+}
