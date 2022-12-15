@@ -44,9 +44,10 @@ const Contents = styled.div`
 `
 
 const Header = styled.div`
-    color: white;
+
     font-size: 22pt;
-    background-color : #28d1e0;
+    background-color : #fff;
+    border: 10px solid #232272;
     height: 90px;
     display: flex;
     justify-content: center;
