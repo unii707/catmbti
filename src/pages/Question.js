@@ -32,24 +32,6 @@ const Question = () => {
         }
  
 
-        // if (type === "EI") {
-        //     const addScore = totalScore[0].score + no;
-        //     const newObject = { id: "EI", score: addScore };
-        //     totalScore.splice(0, 1, newObject);    
-        // }else if (type === "SN") {
-        //     const addScore = totalScore[1].score + no;
-        //     const newObject = { id: "SN", score: addScore };
-        //     totalScore.splice(1, 1, newObject);
-        // } else if (type === "TF") {
-        //     const addScore = totalScore[2].score + no;
-        //     const newObject = { id: "TF", score: addScore };
-        //     totalScore.splice(2, 1, newObject);
-        // } else {
-        //     const addScore = totalScore[3].score + no;
-        //     const newObject = { id: "JP", score: addScore };
-        //     totalScore.splice(3, 1, newObject);
-        // }
-
     }
 
     return (
