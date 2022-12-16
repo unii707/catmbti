@@ -49,13 +49,15 @@ const Question = () => {
 
     return (
         <Wrapper>
+            <Header>예비집사  <span style={{ color: '#232272', padding: '15px' }}>MBTI TEST</span>
+            </Header>
 
-            <ProgressBar variant="info" now={(questionNo / QuestionData.length) * 100} style={{ marginTop: "30px", marginLeft:"20px", marginRight:"40px"}} /> 
+            <ProgressBar variant="success" now={(questionNo / QuestionData.length) * 100} style={{ marginTop: "30px", marginLeft:"20px", marginRight:"40px"}} /> 
 
 
 
             <Title>
-                <Badge bg="info"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
+                <Badge bg="success"><span className="rounded-circle" style={{  fontWeight:"600", fontSize:"16pt" }}>Q </span></Badge>
                             &nbsp;&nbsp;<span>{QuestionData[questionNo].title}</span>
             </Title>
 
@@ -84,6 +86,18 @@ const Wrapper = styled.div`
     background-color : white;
     height: 100vh;
     width: 100%;
+`
+const Header = styled.div`
+    color: #9955ff;
+    font-size: 20pt;
+    background-color : #fff;
+    border: 8px solid #aaccff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    font-family: "nanumsquareroundb";
+
 `
 const Contents = styled.div`
     display: flex;
