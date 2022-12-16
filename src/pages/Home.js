@@ -49,10 +49,10 @@ const Contents = styled.div`
 
 const Header = styled.div`
     color: #9955ff;
-    font-size: 22pt;
+    font-size: 20pt;
     background-color : #fff;
     border: 8px solid #aaccff;
-    height: 90px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items : center;
@@ -63,7 +63,7 @@ const Title = styled.div`
 
     font-size: 16pt;
     font-family: "nanumsquareroundr";
-    padding: 30px;
+    padding: 20px;
 `
 
 const LogoImage = styled.div`
