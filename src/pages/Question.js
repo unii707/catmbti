@@ -84,13 +84,11 @@ const Wrapper = styled.div`
     background-color : white;
     height: 100vh;
     width: 100%;
-    margin: 0 20px;
 `
 const Contents = styled.div`
     display: flex;
     justify-content: center;
     align-items : center;
-    flex-direction: column;
 `
 const Title = styled.div`
 

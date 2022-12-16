@@ -57,6 +57,9 @@ const Result = () => {
                     style={{ backgroundColor: '#232272', borderColor: '#232272', borderRadius: '30px', width: '350px',fontSize:'18pt' }}
                     onClick={() => navigate("/")}>TEST AGAIN</Button>
             </Contents>
+            <Footer>
+                :&nbsp;:&nbsp;:&nbsp;:&nbsp;: &nbsp;sunghun.joe&nbsp; :&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;
+            </Footer>
         </Wrapper>
     );
 };
@@ -131,4 +134,10 @@ const Textguide = styled.div`
     font-family: "nanumsquareroundr";
     
 `
-
+const Footer = styled.div`
+    font-size: 11pt;
+    padding: 10px;
+    text-align: center;
+    background-color : #ededed;
+    margin-top:30px;
+`
