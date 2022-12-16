@@ -76,6 +76,9 @@ const Question = () => {
                 </ButtonGroup>
 
             </Contents>
+            <Footer>
+                :&nbsp;:&nbsp;:&nbsp;:&nbsp;: &nbsp;sunghun.joe&nbsp; :&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;
+            </Footer>
         </Wrapper>
     );
 };
@@ -121,4 +124,11 @@ const ButtonGroup = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 30px;
+`
+const Footer = styled.div`
+    font-size: 11pt;
+    padding: 10px;
+    text-align: center;
+    background-color : #ededed;
+    margin-top:30px;
 `
