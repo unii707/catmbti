@@ -26,6 +26,9 @@ const Home = () => {
                 <Desc>MBTI를 기반으로 하는 <br />나랑 잘 맞는 고양이 찾기!</Desc>
                 <Button style={{backgroundColor: "#333", borderColor: "#333", borderRadius: "30px", width: "350px", fontSize:'18pt'} } onClick={handleClickButton}>TEST START</Button>
             </Contents>
+            <Footer>
+                :&nbsp;:&nbsp;:&nbsp;:&nbsp;: &nbsp;sunghun.joe&nbsp; :&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;
+            </Footer>
         </Wrapper>
     );
 };
@@ -72,5 +75,12 @@ const Desc = styled.div`
     padding: 28px;
     text-align: center;
     font-family: "nanumsquareroundr";
+`
+const Footer = styled.div`
+    font-size: 11pt;
+    padding: 10px;
+    text-align: center;
+    background-color : #ededed;
+    margin-top:30px;
 `
 
